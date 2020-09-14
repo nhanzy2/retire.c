@@ -26,18 +26,21 @@
   printf("years until retirement:");
   scanf("%d", &years);
   
-  months=years*12
+  months= years*12;
   
-    if(0>=rateReturn && rateReturn>=1){
+  printf("\nMonth    Interest    Balance\n");
+
+  if(0>=rateReturn && rateReturn>=1){
    printf("Error.");
   }
   if(0>=rateInflation && rateInflation>=1){
    printf("Error.");
   }
-for(int i=1; i<=months; i++){
- 
+for(int month=1; month<=months; month++){
+ interest=(startBal * (((1 + rateReturn)/(1 + rateInflation))-1))/12;
+ balance= startBal + contributAmount + interest;
+ printf("%d   %.2lf  %.2lf    \n ", months, interest, balance);
 }
-  printf("\nYear    Interest    Balance");
     printf("\n----  --------    -------");
     printf("\n%d    %.2lf    %.2lf", months, interest, Nest egg);
 
