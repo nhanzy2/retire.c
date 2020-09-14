@@ -8,7 +8,7 @@
  #include<stdio.h>
  
  int main (int argc, char **argv) {
- int double startbBal,contributAmount, rateReturn, rateInflation;
+ double startBal,contributAmount, rateReturn, rateInflation, interest, balance;
  int years, months;
   
   printf("initial starting balance:");
