@@ -32,10 +32,10 @@
   
   printf("\nMonth    Interest    Balance\n");
 
-  if(0>=rateReturn && rateReturn>=1){
+  if(0>=rateReturn || rateReturn>=1){
    printf("Error.");
   }
-  if(0>=rateInflation && rateInflation>=1){
+  if(0>=rateInflation || rateInflation>=1){
    printf("Error.");
   }
 for(int month=1; month<=months; month++){
@@ -43,6 +43,7 @@ for(int month=1; month<=months; month++){
  double monthlyIncrease= interest * (((1 + rateReturn)/(1 + rateInflation))-1);
  interest= interest + monthlyIncrease;
  balance=balance + interest+ contributAmount;
+ printf("total Nest Egg: ")
 }
 
  
