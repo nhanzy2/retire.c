@@ -41,8 +41,7 @@ for(int month=1; month<=months; month++){
  balance= startBal + contributAmount + interest;
  printf("%d   %.2lf  %.2lf    \n ", months, interest, balance);
 }
-    printf("\n----  --------    -------");
-    printf("\n%d    %.2lf    %.2lf", months, interest, Nest egg);
+ 
 
 
 
