@@ -37,7 +37,9 @@
 for(int i=1; i<=months; i++){
  
 }
- 
+  printf("\nYear    Interest    Balance");
+    printf("\n----  --------    -------");
+    printf("\n%d    %.2lf    %.2lf", months, interest, Nest egg);
 
 
 
