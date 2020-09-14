@@ -1,5 +1,5 @@
 /**
- * Author: Nathan Hanzy
+ * Author: Nathan Hanzy, Blake Sudbeck
  * Date: 2020/09/04
  * 
  * A program to calculate 401k
