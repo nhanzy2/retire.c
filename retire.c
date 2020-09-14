@@ -26,7 +26,10 @@
   printf("years until retirement:");
   scanf("%d", &years);
   
-  months= years*12;
+  
+   interest=(startBal * (((1 + rateReturn)/(1 + rateInflation))-1))/12;
+   balance= startBal + contributAmount + interest;
+   months= years*12;
   
   printf("\nMonth    Interest    Balance\n");
 
@@ -37,9 +40,10 @@
    printf("Error.");
   }
 for(int month=1; month<=months; month++){
- interest=(startBal * (((1 + rateReturn)/(1 + rateInflation))-1))/12;
- balance= startBal + contributAmount + interest;
- printf("%d   %.2lf  %.2lf    \n ", months, interest, balance);
+ printf("%d        %.2lf         %.2lf\n ", month, interest, balance);
+ double weeklyIncrease=(balance* (((1 + rateReturn)/(1 + rateInflation))-1))/12;
+ interest=interest+weeklyIncrease;
+ balance=balance+interest;
 }
  
 
