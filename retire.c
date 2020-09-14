@@ -9,7 +9,7 @@
  
  int main (int argc, char **argv) {
  int double startbBal,contributAmount, rateReturn, rateInflation;
- int years;
+ int years, months;
   
   printf("initial starting balance:");
   scanf("%lf", &startBal);
@@ -26,7 +26,17 @@
   printf("years until retirement:");
   scanf("%d", &years);
   
-  \
+  months=years*12
+  
+    if(0>=rateReturn && rateReturn>=1){
+   printf("Error.");
+  }
+  if(0>=rateInflation && rateInflation>=1){
+   printf("Error.");
+  }
+for(int i=1; i<=months; i++){
+ 
+}
  
 
 
