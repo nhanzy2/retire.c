@@ -43,7 +43,7 @@ for(int month=1; month<=months; month++){
  double monthlyIncrease= interest * (((1 + rateReturn)/(1 + rateInflation))-1);
  interest= interest + monthlyIncrease;
  balance=balance + interest+ contributAmount;
- printf("total Nest Egg: ")
+ printf("total Nest Egg: "%lf, balance);
 }
 
  
